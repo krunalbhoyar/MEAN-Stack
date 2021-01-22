@@ -13,6 +13,6 @@ services:
   - "3000:3000"
  
  database: # name of the third service
-  image: mysql
+  image: mongo
   ports:
-  - "3306:3306"
+  - "27017:27017"
