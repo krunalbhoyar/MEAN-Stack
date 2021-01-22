@@ -11,10 +11,8 @@ services:
   build: express-server
   ports:
   - "3000:3000"
-  links:
-  - database
  
  database: # name of the third service
-  image: mongo
+  image: mysql
   ports:
-  - "27017:27017"
+  - "3306:3306"
